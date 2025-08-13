@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beautyfilled Clothing</title>
+  <link rel="stylesheet" href="style.css" />
     <style>
         .center-content {
             text-align: center;
@@ -9,7 +12,25 @@
         }
     </style>
 </head>
-<body>
+<body style="background-image: url('images/White\ Wall.jpg'); background-size: cover; background-repeat: no-repeat;">
+
+    <header>
+    <h1>Beautyfilled Clothing</h1>
+    <h2>Welcome To Our Online Clothing Store</h2>
+    <h3>Updating You With The Latest Fashion</h3>
+  </header>
+
+    <nav class="text-center mt-20">
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="#">New Arrivals</a>
+        <a href="#">Sale</a>
+        <a href="#">Regular</a>
+        <a href="#">Curve</a>
+        <a href="#">Kids</a>
+        <a href="#">Shoes</a>
+    </nav>
+
     <main>
         <section class="product-grid">
             
@@ -18,14 +39,121 @@
         <a href="casualLegJeans.html">
           <img src="images/Casual Loose Straight Leg Wide Leg Jeans.jpg" alt="Casual Loose Straight Leg Wide Leg Jeanst" onclick="openLightbox(this.src, this.alt)">
         </a>
-        <p class="price">R200</p>
+        <p class="price">R350</p>
       </article>
+
+      <article class="product-card">
+        <a href="redCheckeredPants.html">
+            <img src="images/Red Checkered Pants.jpg" alt="Red Checkered Pants" onclick="openLightbox(this.src, this.alt)">
+        </a>
+        <p class="price">R280</p>
+      </article>
+
+      <article class="product-card">
+        <a href="pulloverSweater.html">
+          <img src="images/Pullover Long Sleeve Sweater.jpg" alt="Graffiti Print Pullover Sweater" onclick="openLightbox(this.src, this.alt)">
+        </a>
+        <p class="price">R250</p>
+      </article>
+
+      <article class="product-card">
+        <a href="strippedHareemPants.html">
+          <img src="images/Stripped Hareem Pants.jpg" alt="Stripped Hareem Pants" onclick="openLightbox(this.src, this.alt)">
+        </a>
+        <p class="price">R350</p>
+      </article>
+
+      <article class="product-card">
+        <a href="v-NeckJersy.html">
+          <img src="images/Loose V-Neck Sweat-Shirt Y2k Jersy.jpg" alt="Loose V-Neck Sweat-Shirt Y2k Jersy" onclick="openLightbox(this.src, this.alt)">
+        </a>
+        <p class="price">R180</p>
+      </article>
+
+      <article class="product-card">
+        <a href="cargoPocketShirtAndPantsSuit.html">
+          <img src="images/Cargo Pocket Shirt And Pants Casual Suit.jpg" alt="Cargo Pocket Shirt And Pants Casual Suit" onclick="openLightbox(this.src, this.alt)">
+        </a>
+        <p class="price">R370</p>
+      </article>
+
+      <article class="product-card">
+        <a href="flapPocketDenimJacket.html">
+          <img src="images/Flap Pocket Denim Jacket.jpg" alt="Flap Pocket Denim Jacket" onclick="openLightbox(this.src, this.alt)">
+        </a>
+        <p class="price">R340</p>
+      </article>
+
+      <article class="product-card">
+        <a href="greySweatPants.html">
+            <img src="images/Grey Sweat-Pants.jpg" alt="Grey Sweat-Pants" onclick="openLightbox(this.src, this.alt)">
+        </a>
+        <p class="price">R280</p>
+      </article>
+
+      <article class="product-card">
+        <a href="hoodedSweatshirtJacket.html">
+            <img src="images/Drawstring Hooded Sweatshirt Jacket.jpg" alt="Drawstring Hooded Sweatshirt Jacket" onclick="openLightbox(this.src, this.alt)">
+        </a>
+        <p class="price">R380</p>
+      </article>
+
+      <article class="product-card">
+        <a href="denimFrayedHemShorts.html">
+            <img src="images/Denim Frayed Hem Shorts.jpg" alt="Denim Frayed Hem Shorts" onclick="openLightbox(this.src, this.alt)">
+        </a>
+        <p class="price">R250</p>
+      </article>
+
+      <article class="product-card">
+        <a href="fringeCrewNeckWashedT-Shirt.html">
+            <img src="images/Fringe Crew Neck Washed T-Shirt.jpg" alt="Fringe Crew Neck Washed T-Shirt" onclick="openLightbox(this.src, this.alt)">
+        </a>
+        <p class="price">R150</p>
+      </article>
+
+      <article class="product-card">
+        <a href="croppedOveralls.html">
+            <img src="images/Zipper And Straps In Cropped Overalls.jpg" alt="Zipper And Straps In Cropped Overalls" onclick="openLightbox(this.src, this.alt)">
+        </a>
+        <p class="price">R350</p>
+      </article>
+
         </section>
         <div class="center-content">
         <br/>
         <a href="index.html" class="back-link">← Back to Home</a>         
         </div>
     </main>
+
+      <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img" src="" alt="Expanded Product Image">
+  </div>
+
+  <footer class="text-center mt-20">
+    <p>&copy; 2025 Beautyfilled Clothing. All rights reserved.</p>
+    <p>
+      <a href="#">Privacy Policy</a> |
+      <a href="#">Terms of Service</a> |
+      <a href="#">Help</a>
+    </p>
+  </footer>
+
+  <!-- Lightbox Script -->
+  <script>
+    function openLightbox(src, alt) {
+      const lightbox = document.getElementById('lightbox');
+      const img = document.getElementById('lightbox-img');
+      img.src = src;
+      img.alt = alt;
+      lightbox.style.display = 'flex';
+    }
+
+    function closeLightbox() {
+      document.getElementById('lightbox').style.display = 'none';
+    }
+  </script>
 </body>
 </html>
 
