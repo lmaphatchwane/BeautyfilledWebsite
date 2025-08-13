@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beautyfilled Clothing</title>
+  <link rel="stylesheet" href="style.css" />
+    <style>
+        .center-content {
+            text-align: center;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body style="background-image: url('images/White\ Wall.jpg'); background-size: cover; background-repeat: no-repeat;">
+
+    <header>
+    <h1>Beautyfilled Clothing</h1>
+    <h2>Welcome To Our Online Clothing Store</h2>
+    <h3>Updating You With The Latest Fashion</h3>
+  </header>
+
+    <nav class="text-center mt-20">
+        <a href="curve.html">Curve</a>
+        <a href="men.html">Men</a>
+        <a href="#">Shoes</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <main>
+        <section class="product-grid">
+            
+            <!-- Product Cards -->
+      <article class="product-card">
+        <a href="badgePrintDenimShirt.html">
+          <img src="images/Badge Print Short Sleeve Denim Shirt (7-8) R250.jpg" alt="Badge Print Short Sleeve Denim Shirt" onclick="openLightbox(this.src, this.alt)">
+        </a>
+        <p class="price">R250</p>
+      </article>
+
+      <article class="product-card">
+        <a href="blueLooseFitDenimJeans.html">
+          <img src="images/Blue Distressed Loose Fit Denim Jeans (4-7) R170.jpg" alt="Blue Distressed Loose Fit Denim Jeans" onclick="openLightbox(this.src, this.alt)">
+        </a>
+        <p class="price">R170</p>
+      </article>
+
+      <article class="product-card">
+        <a href="looseCargoPants.html">
+          <img src="images/Loose Cargo Pants With Flap Pockets & Drawstring (8-14) R180.jpg" alt="Loose Cargo Pants With Flap Pockets & Drawstring" onclick="openLightbox(this.src, this.alt)">
+        </a>
+        <p class="price">R180</p>
+      </article>
+
+      <article class="product-card">
+        <a href="cuteGirlPortrait.html">
+          <img src="images/Cute Girl Portrait (6-7) R100.jpg" alt="Cute Girl Portrait" onclick="openLightbox(this.src, this.alt)">
+        </a>
+        <p class="price">R100</p>
+      </article>
+
+      <article class="product-card">
+        <a href="printedJacket&Sweatpants.html">
+          <img src="images/Printed Jacket Matched With Sweatpants (8-14) R280.jpg" alt="Printed Jacket Matched With Sweatpants" onclick="openLightbox(this.src, this.alt)">
+        </a>
+        <p class="price">R280</p>
+      </article>
+
+      <article class="product-card">
+        <a href="t-ShirtAndWideLegPants.html">
+          <img src="images/T-Shirt And Wide Leg Pants (8-12) R150.jpg" alt="T-Shirt And Wide Leg Pants" onclick="openLightbox(this.src, this.alt)">
+        </a>
+        <p class="price">R150</p>
+      </article>
+
+      <article class="product-card">
+        <a href="youngBoyJumpsuit.html">
+          <img src="images/Young Boy Loose Comfortable Jumpsuit (4-12) R180.jpg" alt="Young Boy Loose Comfortable Jumpsuit" onclick="openLightbox(this.src, this.alt)">
+        </a>
+        <p class="price">R180</p>
+      </article>
+
+      <article class="product-card">
+        <a href="pearlsBeadedDress.html">
+          <img src="images/Pearls Beaded Mock Neck Dress Without Belt (13-16) R200.jpg" alt="Pearls Beaded Mock Neck Dress Without Belt" onclick="openLightbox(this.src, this.alt)">
+        </a>
+        <p class="price">R200</p>
+      </article>
+
+      <article class="product-card">
+        <a href="washedKhakiDenim.html">
+          <img src="images/Washed Khaki Denim (Age 8 - 12)  R250.jpg" alt="Washed Khaki Denim" onclick="openLightbox(this.src, this.alt)">
+        </a>
+        <p class="price">R250</p>
+      </article>
+
+      <article class="product-card">
+        <a href="girlsT-Shirt&PinkDenim.html">
+          <img src="images/Girls Bow Decor T-Shirt & Pink Denim Mini Skirt (8-12) R230.jpg" alt="Girls Bow Decor T-Shirt & Pink Denim Mini Skirt" onclick="openLightbox(this.src, this.alt)">
+        </a>
+        <p class="price">R230</p>
+      </article>
+
+        </section>
+        <div class="center-content">
+        <br/>
+        <a href="index.html" class="back-link">← Back to Home</a>         
+        </div>
+    </main>
+
+      <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img" src="" alt="Expanded Product Image">
+  </div>
+
+  <footer class="text-center mt-20">
+    <p>&copy; 2025 Beautyfilled Clothing. All rights reserved.</p>
+    <p>
+      <a href="#">Privacy Policy</a> |
+      <a href="#">Terms of Service</a> |
+      <a href="#">Help</a>
+    </p>
+  </footer>
+
+  <!-- Lightbox Script -->
+  <script>
+    function openLightbox(src, alt) {
+      const lightbox = document.getElementById('lightbox');
+      const img = document.getElementById('lightbox-img');
+      img.src = src;
+      img.alt = alt;
+      lightbox.style.display = 'flex';
+    }
+
+    function closeLightbox() {
+      document.getElementById('lightbox').style.display = 'none';
+    }
+  </script>
+</body>
+</html>
+
+

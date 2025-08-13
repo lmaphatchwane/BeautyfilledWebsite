@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beautyfilled Clothing</title>
+  <link rel="stylesheet" href="style.css" />
+    <style>
+        .center-content {
+            text-align: center;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body style="background-image: url('images/White\ Wall.jpg'); background-size: cover; background-repeat: no-repeat;">
+
+    <header>
+    <h1>Beautyfilled Clothing</h1>
+    <h2>Welcome To Our Online Clothing Store</h2>
+    <h3>Updating You With The Latest Fashion</h3>
+  </header>
+
+    <nav class="text-center mt-20">
+        <a href="men.html">Men</a>
+        <a href="kids.html">Kids</a>
+        <a href="#">Shoes</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <main>
+        <section class="product-grid">
+            
+            <!-- Product Cards -->
+      <article class="product-card">
+        <a href="contrastHalterDress.html">
+          <img src="images/Contrast Color Floral Print Halter Dress (0XL-5XL) R200.jpg" alt="Contrast Color Floral Print Halter Dress" onclick="openLightbox(this.src, this.alt)">
+        </a>
+        <p class="price">R200</p>
+      </article>
+
+      <article class="product-card">
+        <a href="dripcurvDenimJumpsuit.html">
+          <img src="images/Dripcurv Plus Size Denim Jumpsuit (0XL-4XL) R250.jpg" alt="Dripcurv Plus Size Denim Jumpsuit" onclick="openLightbox(this.src, this.alt)">
+        </a>
+        <p class="price">R250</p>
+      </article>
+
+      <article class="product-card">
+        <a href="linharaSummerSleevelessDress.html">
+          <img src="images/Linhara Summer Sleeveless Dress (1XL-5XL) R180.jpg" alt="Linhara Summer Sleeveless Dress" onclick="openLightbox(this.src, this.alt)">
+        </a>
+        <p class="price">R180</p>
+      </article>
+
+      <article class="product-card">
+        <a href="drawstringWaistBermudaShorts.html">
+          <img src="images/Drawstring Waist Bermuda Shorts (0XL-4XL) R150.jpg" alt="Drawstring Waist Bermuda Shorts" onclick="openLightbox(this.src, this.alt)">
+        </a>
+        <p class="price">R150</p>
+      </article>
+
+      <article class="product-card">
+        <a href="roundNeckKnittedDress.html">
+          <img src="images/Round Neck Knitted Sweater Dress (5XL-8XL) R200.jpg" alt="Round Neck Knitted Sweater Dress" onclick="openLightbox(this.src, this.alt)">
+        </a>
+        <p class="price">R200</p>
+      </article>
+
+      <article class="product-card">
+        <a href="letterPrintT-Shirt.html">
+          <img src="images/Letter Print Round Neck Short Sleeve T-Shirt (0XL-5XL) R120.jpg" alt="Letter Print Round Neck Short Sleeve T-Shirt" onclick="openLightbox(this.src, this.alt)">
+        </a>
+        <p class="price">R120</p>
+      </article>
+
+      <article class="product-card">
+        <a href="asymmetricHemAndStripedSkirt.html">
+          <img src="images/Asymmetric Hem And Striped Skirt (0XL-4XL) R250.jpg" alt="Asymmetric Hem And Striped Skirt" onclick="openLightbox(this.src, this.alt)">
+        </a>
+        <p class="price">R250</p>
+      </article>
+
+      <article class="product-card">
+        <a href="solidWaistbandPocketSweatpants.html">
+          <img src="images/Solid Color Waistband Pocket Sweatpants (0XL-4XL) R200.jpg" alt="Solid Color Waistband Pocket Sweatpants" onclick="openLightbox(this.src, this.alt)">
+        </a>
+        <p class="price">R200</p>
+      </article>
+
+        </section>
+        <div class="center-content">
+        <br/>
+        <a href="index.html" class="back-link">← Back to Home</a>         
+        </div>
+    </main>
+
+      <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img" src="" alt="Expanded Product Image">
+  </div>
+
+  <footer class="text-center mt-20">
+    <p>&copy; 2025 Beautyfilled Clothing. All rights reserved.</p>
+    <p>
+      <a href="#">Privacy Policy</a> |
+      <a href="#">Terms of Service</a> |
+      <a href="#">Help</a>
+    </p>
+  </footer>
+
+  <!-- Lightbox Script -->
+  <script>
+    function openLightbox(src, alt) {
+      const lightbox = document.getElementById('lightbox');
+      const img = document.getElementById('lightbox-img');
+      img.src = src;
+      img.alt = alt;
+      lightbox.style.display = 'flex';
+    }
+
+    function closeLightbox() {
+      document.getElementById('lightbox').style.display = 'none';
+    }
+  </script>
+</body>
+</html>
+
+

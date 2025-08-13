@@ -107,6 +107,16 @@ nav {
     margin-top: 10px;
 }
 
+.size {
+    font-weight: bold;
+    color:darkblue;
+    margin-top: 10px;
+}
+
+.size{
+    text-decoration: underline;
+}
+
 /* Lightbox styles */
 .lightbox {
     display: none;
