@@ -254,3 +254,64 @@ p{
 .contact-section a:hover {
     text-decoration: underline;
 }
+
+/* WhatsApp Cart Styles */
+#selectionCart {
+  position: fixed;
+  right: 20px;
+  top: 100px;
+  width: 300px;
+  background-color: white;
+  padding: 15px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  z-index: 1000;
+  max-height: 80vh;
+  overflow-y: auto;
+  transition: transform 0.3s ease;
+  border-radius: 8px;
+  color: black;
+}
+
+#selectionCart h3, #selectionCart h4 {
+  color: var(--accent-color);
+}
+
+#selectionCart input,
+#selectionCart textarea {
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+#cartToggle {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  z-index: 1001;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  #selectionCart {
+    transform: translateY(100%);
+    right: 10px;
+    left: 10px;
+    width: auto;
+  }
+
+  #selectionCart.open {
+    transform: translateY(0);
+  }
+
+  #cartToggle {
+    display: block;
+  }
+}
