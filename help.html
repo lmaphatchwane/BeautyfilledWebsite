@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Help | Beautyfilled Clothing</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    :root {
+      --primary-color: rgb(230, 157, 93);
+      --accent-color: darkred;
+      --highlight-color: #d6336c;
+    }
+
+    .help-section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+      background-color: rgba(255, 255, 255, 0.95);
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .help-section h2 {
+      color: var(--accent-color);
+      font-size: 1.8em;
+      margin-top: 40px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .help-section p {
+      font-size: 1.1em;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    .help-section img.icon {
+      width: 28px;
+      filter: invert(14%) sepia(96%) saturate(572%) hue-rotate(337deg) brightness(85%) contrast(89%);
+    }
+
+    .help-banner {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 600px) {
+      .help-section h2 {
+        font-size: 1.4em;
+      }
+
+      .help-section img.icon {
+        width: 24px;
+      }
+    }
+  </style>
+</head>
+<body style="background-image: url('images/White Wall.jpg'); background-size: cover; background-repeat: no-repeat;">
+
+  <header>
+    <h1>Need Help?</h1>
+    <h2>Customer Support – Beautyfilled Clothing</h2>
+  </header>
+
+  <main class="help-section">
+
+    <!-- Banner image -->
+    <img src="https://images.unsplash.com/photo-1618354691373-06ef790b28e1?auto=format&fit=crop&w=1200&q=80" alt="Fashion help banner" class="help-banner" />
+
+    <section>
+      <h2><img src="https://img.icons8.com/ios-filled/50/shopping-bag.png" class="icon"/> 1. How Do I Place an Order?</h2>
+      <p>
+        Simply browse our website and click the <strong>"Add to List"</strong> button on the products you like. When you're ready, tap the green <strong>"Cart"</strong> button, fill in your details, and click <strong>"Send via WhatsApp"</strong>. We'll confirm your order quickly!
+      </p>
+    </section>
+
+    <section>
+      <h2><img src="https://img.icons8.com/ios-filled/50/bank-cards.png" class="icon"/> 2. How Do I Pay?</h2>
+      <p>
+        Once you place your order, we'll send you our bank account info on WhatsApp. Payment is made via EFT (Electronic Funds Transfer). We process your order after confirming payment.
+      </p>
+    </section>
+
+    <section>
+      <h2><img src="https://img.icons8.com/ios-filled/50/delivery.png" class="icon"/> 3. How Much is Delivery?</h2>
+      <p>
+        Delivery costs depend on your location. Once you send us your address, we’ll calculate the courier fee and let you know the total cost before you pay.
+      </p>
+    </section>
+
+    <section>
+      <h2><img src="https://img.icons8.com/ios-filled/50/return-purchase.png" class="icon"/> 4. Returns & Exchanges</h2>
+      <p>
+        We only accept returns if an item arrives damaged. Unfortunately, we do not offer exchanges for size or color. Please read item descriptions carefully before ordering.
+      </p>
+    </section>
+
+    <section>
+      <h2><img src="https://img.icons8.com/ios-filled/50/price-tag.png" class="icon"/> 5. Product Quality</h2>
+      <p>
+        We resell trusted brands like <strong>SHEIN</strong> and always aim for high-quality stock. However, as resellers, we don’t control the manufacturing process. If you're unsure about an item, feel free to ask us on WhatsApp.
+      </p>
+    </section>
+
+    <section>
+      <h2><img src="https://img.icons8.com/ios-filled/50/whatsapp.png" class="icon"/> 6. Still Need Help?</h2>
+      <p>
+        We’re happy to help! You can reach us directly on WhatsApp at:<br/>
+        <strong><a href="https://wa.me/27749627714" target="_blank">+27 74 962 7714</a></strong>
+      </p>
+    </section>
+
+  </main>
+
+  <footer class="text-center mt-20">
+    <p>&copy; 2025 Beautyfilled Clothing. All rights reserved.</p>
+    <p>
+      <a href="privacyPolicy.html">Privacy Policy</a> |
+      <a href="termsAndConditions.html">Terms of Service</a> |
+      <a href="#">Help</a>
+    </p>
+  </footer>
+
+</body>
+</html>

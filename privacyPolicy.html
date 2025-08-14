@@ -1,43 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Privacy Policy - Beautyfilled</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Privacy Policy | Beautyfilled Clothing</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .policy-section {
+      max-width: 900px;
+      margin: 40px auto;
+      background-color: rgba(255, 255, 255, 0.96);
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      color: #333;
+    }
+
+    .policy-section h1, 
+    .policy-section h2 {
+      color: var(--accent-color);
+    }
+
+    .policy-section h1 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    .policy-section h2 {
+      margin-top: 30px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .policy-section ul {
+      padding-left: 20px;
+      line-height: 1.6;
+    }
+
+    .policy-section p {
+      font-size: 1.05em;
+      line-height: 1.7;
+    }
+
+    .policy-section img.icon {
+      width: 24px;
+      filter: invert(14%) sepia(96%) saturate(572%) hue-rotate(337deg) brightness(85%) contrast(89%);
+    }
+
+    @media (max-width: 600px) {
+      .policy-section {
+        padding: 20px;
+      }
+
+      .policy-section h1 {
+        font-size: 1.6em;
+      }
+
+      .policy-section h2 {
+        font-size: 1.2em;
+      }
+    }
+  </style>
 </head>
-<body>
+<body style="background-image: url('images/White Wall.jpg'); background-size: cover; background-repeat: no-repeat;">
 
-<h1>Privacy Policy</h1>
-<p><strong>Last Updated: [08/14/2025]</strong></p>
+  <header>
+    <h1>Privacy Policy</h1>
+    <h2>Your Privacy Matters to Us</h2>
+  </header>
 
-<h2>1. Information We Collect</h2>
-<p>We may collect the following information:</p>
-<ul>
-  <li>Your name</li>
-  <li>Contact information (email, phone number, delivery address)</li>
-  <li>Payment confirmation details (excluding card/bank data)</li>
-  <li>Communications between you and us</li>
-</ul>
+  <main class="policy-section">
 
-<h2>2. How We Use Your Information</h2>
-<p>We use your information to:</p>
-<ul>
-  <li>Process and deliver your orders</li>
-  <li>Communicate with you regarding purchases</li>
-  <li>Improve our services</li>
-</ul>
+    <p><strong>Last Updated:</strong> 14 August 2025</p>
 
-<h2>3. Data Security</h2>
-<p>We take reasonable steps to protect your data. However, no method of online transmission is 100% secure.</p>
+    <h2><img src="https://img.icons8.com/ios-filled/50/privacy-policy.png" class="icon"/> 1. Information We Collect</h2>
+    <p>We may collect the following information:</p>
+    <ul>
+      <li>Your name</li>
+      <li>Contact information (email, phone number, delivery address)</li>
+      <li>Payment confirmation details (excluding card/bank data)</li>
+      <li>Communications between you and us</li>
+    </ul>
 
-<h2>4. Sharing of Information</h2>
-<p>We do <strong>not sell or share</strong> your data with third parties, except:</p>
-<ul>
-  <li>As required by law</li>
-  <li>To third-party couriers for delivery</li>
-</ul>
+    <h2><img src="https://img.icons8.com/ios-filled/50/services.png" class="icon"/> 2. How We Use Your Information</h2>
+    <p>We use your information to:</p>
+    <ul>
+      <li>Process and deliver your orders</li>
+      <li>Communicate with you regarding purchases</li>
+      <li>Improve our services</li>
+    </ul>
 
-<h2>5. Your Rights</h2>
-<p>You may request access to, correction, or deletion of your personal information by contacting us at: <strong>[lmaphatchwane@gmail.com or +2774-962-7714]</strong></p>
+    <h2><img src="https://img.icons8.com/ios-filled/50/lock-2.png" class="icon"/> 3. Data Security</h2>
+    <p>We take reasonable steps to protect your data. However, no method of online transmission is 100% secure.</p>
+
+    <h2><img src="https://img.icons8.com/ios-filled/50/share-3.png" class="icon"/> 4. Sharing of Information</h2>
+    <p>We do <strong>not sell or share</strong> your data with third parties, except:</p>
+    <ul>
+      <li>As required by law</li>
+      <li>To third-party couriers for delivery</li>
+    </ul>
+
+    <h2><img src="https://img.icons8.com/ios-filled/50/checked-user-male.png" class="icon"/> 5. Your Rights</h2>
+    <p>
+      You may request access to, correction, or deletion of your personal information by contacting us at:
+      <br><strong><a href="mailto:lmaphatchwane@gmail.com">lmaphatchwane@gmail.com</a></strong> or
+      <strong><a href="https://wa.me/27749627714" target="_blank">+27 74 962 7714</a></strong>.
+    </p>
+    <br/>
+    <a href="index.html" class="back-link">← Back to Home</a>
+  </main>
+
+  <footer class="text-center mt-20">
+    <p>&copy; 2025 Beautyfilled Clothing. All rights reserved.</p>
+    <p>
+      <a href="privacyPolicy.html">Privacy Policy</a> |
+      <a href="termsAndConditions.html">Terms of Service</a> |
+      <a href="help.html">Help</a>
+    </p>
+  </footer>
 
 </body>
 </html>
