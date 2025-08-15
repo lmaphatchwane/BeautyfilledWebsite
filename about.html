@@ -2,49 +2,58 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Us - Beautyfilled Clothing</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us | Beautyfilled Clothing</title>
   <link rel="stylesheet" href="style.css" />
   <style>
     body {
+      background-color: #f5f5f5;
       font-family: Arial, sans-serif;
-      background-color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 50px auto;
+      background-color: white;
       padding: 40px;
-      max-width: 900px;
-      margin: auto;
-      line-height: 1.8;
-      color: #333;
+      border-radius: 8px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     }
 
     h2 {
-      font-size: 32px;
-      margin-bottom: 20px;
-      color: #444;
       text-align: center;
+      margin-bottom: 30px;
     }
 
     p {
+      line-height: 1.7;
       margin-bottom: 20px;
+      font-size: 16px;
     }
 
-    a {
+    strong {
+      font-weight: bold;
+    }
+
+    .back-link {
       display: inline-block;
       margin-top: 30px;
       text-decoration: none;
-      background-color: #000;
-      color: #fff;
+      color: white;
+      background-color: black;
       padding: 10px 20px;
       border-radius: 5px;
-      transition: background-color 0.3s ease;
     }
 
-    a:hover {
-      background-color: #444;
+    .back-link:hover {
+      background-color: #333;
     }
   </style>
 </head>
 <body>
-  <section class="about-section">
+  <div class="container">
     <h2>About Us</h2>
     <p>
       <strong>Beautyfilled Clothing</strong> was founded in <strong>2022</strong> with a passion for fashion and a mission to bring the latest trends to you — affordably and effortlessly.
@@ -55,8 +64,7 @@
     <p>
       We believe fashion is for everyone and are committed to providing <strong>top-quality fabrics</strong>, <strong>on-trend styles</strong>, and <strong>outstanding service</strong>. Whether you're dressing up or dressing down, our goal is to help you feel confident and beautiful in every outfit.
     </p>
-
-    <a href="index.html">← Back to Home</a>
-  </section>
+    <a href="index.html" class="back-link">← Back to Home</a>
+  </div>
 </body>
 </html>
