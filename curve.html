@@ -149,23 +149,29 @@
     }
   </script>
 
-  <script>
-  const selectedItems = [];
-
+ <script>
   function addToSelection(productName, price) {
-    selectedItems.push({ name: productName, price: price });
+    let items = JSON.parse(localStorage.getItem('selectedItems')) || [];
+    items.push({ name: productName, price: price });
+    localStorage.setItem('selectedItems', JSON.stringify(items));
     updateCart();
   }
 
   function removeFromSelection(index) {
-    selectedItems.splice(index, 1);
+    let items = JSON.parse(localStorage.getItem('selectedItems')) || [];
+    items.splice(index, 1);
+    localStorage.setItem('selectedItems', JSON.stringify(items));
     updateCart();
   }
 
   function updateCart() {
     const list = document.getElementById('selectedItemsList');
+    if (!list) return;
+
     list.innerHTML = '';
-    selectedItems.forEach((item, index) => {
+    const items = JSON.parse(localStorage.getItem('selectedItems')) || [];
+
+    items.forEach((item, index) => {
       const li = document.createElement('li');
       li.innerHTML = `${item.name} - R${item.price} 
         <button onclick="removeFromSelection(${index})" style="color: red; background: none; border: none; float: right;">✕</button>`;
@@ -174,27 +180,32 @@
   }
 
   function sendToWhatsApp() {
-    const name = document.getElementById('userName').value.trim();
-    const phone = document.getElementById('userPhone').value.trim();
-    const address = document.getElementById('userAddress').value.trim();
+    const name = document.getElementById('userName')?.value.trim();
+    const phone = document.getElementById('userPhone')?.value.trim();
+    const address = document.getElementById('userAddress')?.value.trim();
+    const items = JSON.parse(localStorage.getItem('selectedItems')) || [];
 
-    if (!name || !phone || !address || selectedItems.length === 0) {
+    if (!name || !phone || !address || items.length === 0) {
       alert("Please fill in all fields and select at least one item.");
       return;
     }
 
-    const itemsText = selectedItems.map(i => `- ${i.name} (R${i.price})`).join('%0A');
+    const itemsText = items.map(i => `- ${i.name} (R${i.price})`).join('%0A');
     const message = `Hello Beautyfilled 👗✨%0A%0AI would like to order the following items:%0A${itemsText}%0A%0AName: ${name}%0APhone: ${phone}%0AAddress: ${address}%0A%0AThank you!`;
 
-    const whatsappNumber = "27749627714";
+    const whatsappNumber = "+27749627714";
     const url = `https://wa.me/${whatsappNumber}?text=${message}`;
     window.open(url, '_blank');
   }
 
   function toggleCart() {
-  const cart = document.getElementById('selectionCart');
-  cart.classList.toggle('open');
-}
+    const cart = document.getElementById('selectionCart');
+    if (cart) cart.classList.toggle('open');
+  }
+
+  window.onload = function () {
+    updateCart();
+  };
 </script>
 
 <!-- Toggle Cart Button for Mobile -->
