@@ -301,10 +301,13 @@ p{
 
 @media (max-width: 768px) {
   #selectionCart {
+    bottom: 0;
+    top: auto;
     transform: translateY(100%);
     right: 10px;
     left: 10px;
     width: auto;
+    transition: transform 0.3s ease;
   }
 
   #selectionCart.open {
@@ -315,3 +318,63 @@ p{
     display: block;
   }
 }
+
+
+/* Ensure form container is responsive */
+.add-to-list-container {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Input and button full width on small screens */
+.add-to-list-container input,
+.add-to-list-container button {
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 16px;
+  padding: 12px;
+}
+
+/* Align them horizontally only on larger screens */
+@media (min-width: 600px) {
+  .add-to-list-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .add-to-list-container input,
+  .add-to-list-container button {
+    width: auto;
+    flex: 1;
+    margin-bottom: 0;
+  }
+
+  .add-to-list-container button {
+    flex: none;
+  }
+}
+
+@media (max-width: 768px) {
+  #selectionCart {
+    bottom: 0;
+    top: auto;
+    transform: translateY(100%);
+    right: 10px;
+    left: 10px;
+    width: auto;
+    transition: transform 0.3s ease;
+  }
+
+  #selectionCart.open {
+    transform: translateY(0);
+  }
+
+  #cartToggle {
+    display: block;
+  }
+}
+

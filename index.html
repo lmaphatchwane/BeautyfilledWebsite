@@ -275,11 +275,13 @@
     window.open(url, '_blank');
   }
 
-  function toggleCart() {
-    document.getElementById('selectionCart').classList.toggle('open');
-  }
+ function toggleCart() {
+  const cart = document.getElementById('selectionCart');
+  cart.classList.toggle('open');
+}
 </script>
 
-
+<!-- Toggle Cart Button for Mobile -->
+<button id="cartToggle" onclick="toggleCart()" aria-label="Toggle Cart">🛒 Cart</button>
 </body>
 </html>
